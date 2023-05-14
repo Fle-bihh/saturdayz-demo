@@ -1,0 +1,221 @@
+$color: #0cf;
+
+.Introduction {
+  height: 794px;
+  margin-top: 111px;
+  // display: flex;
+  background-color: white;
+
+  .introComponent {
+    display: flex;
+    .introLeft {
+      height: 100%;
+      width: 870px;
+      display: flex;
+      flex-direction: column;
+      .introText {
+        width: 681px;
+        height: 147px;
+
+        font-family: "SemiBold";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 117%;
+
+        letter-spacing: -0.025em;
+
+        color: #000000;
+
+        margin-top: 128px;
+        margin-left: 136px;
+
+        .orangeWord {
+          color: #ff6b00;
+        }
+
+        @media (max-width: 900px) {
+          margin-left: 70px;
+          width: 85vw;
+        }
+
+        @media (max-width: 650px) {
+          margin-top: 35px;
+          margin-bottom: 35px;
+        }
+      }
+
+      .introButtons {
+        //   background-color: blue;
+        display: flex;
+        margin-top: 81px;
+        margin-left: 116px;
+
+        @media (max-width: 900px) {
+          flex-direction: column;
+          margin-left: 50px;
+        }
+
+        @media (max-width: 500px) {
+          margin-top: 151px;
+        }
+        .soluButton {
+          display: flex;
+          width: 252px;
+          height: 60px;
+
+          border-radius: 30px;
+          padding-right: 20px;
+          transition: all 0.3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 62px;
+            height: 100%;
+            background-color: #fff5ee;
+            border-radius: 10rem;
+            z-index: -2;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #fff5ee;
+            transition: all 0.3s;
+            border-radius: 10rem;
+            z-index: -1;
+          }
+          &:hover {
+            // color: #fff;
+            &:before {
+              width: 100%;
+            }
+            cursor: pointer;
+          }
+        }
+
+        .aboButton {
+          display: flex;
+          width: 324px;
+          height: 60px;
+          margin-left: 100px;
+
+          border-radius: 30px;
+          padding-right: 20px;
+          transition: all 0.3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 62px;
+            height: 100%;
+            background-color: #fff5ee;
+            border-radius: 10rem;
+            z-index: -2;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #fff5ee;
+            transition: all 0.3s;
+            border-radius: 10rem;
+            z-index: -1;
+          }
+          &:hover {
+            &:before {
+              width: 100%;
+            }
+            cursor: pointer;
+          }
+          @media (max-width: 900px) {
+            margin-left: 0px;
+            margin-top: 23px;
+          }
+        }
+
+        .buttonText {
+          width: 324px;
+          height: 36px;
+
+          font-family: "Regular";
+          font-size: 30px;
+          line-height: 60px;
+
+          text-align: center;
+
+          color: #000000;
+        }
+
+        .downArrow {
+          width: 36px;
+          height: 60px;
+
+          font-family: "MaryPoppins";
+          font-style: normal;
+          font-weight: 275;
+          font-size: 42px;
+          line-height: 128.5%;
+
+          letter-spacing: -0.03em;
+
+          color: #000000;
+
+          transform: rotate(90deg);
+          text-align: center;
+        }
+      }
+
+      .googleText {
+        width: 335px;
+        height: 24px;
+        margin-top: 46px;
+        margin-left: 139px;
+
+        font-family: "Regular";
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+
+        color: rgba(0, 0, 0, 0.4);
+        .gTextBold {
+          color: rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 900px) {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    .introRight {
+      height: 100%;
+      width: 100%;
+      .introImage {
+        float: right;
+        width: 26.7vw;
+        height: 26.7vw;
+        margin-top: 94px;
+        margin-right: 139px;
+        margin-left: 40px;
+        text-indent: -100vw;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("Gilroy-Medium"),
+    url("./fonts/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: local("Gilroy-SemiBold"),
+    url("./fonts/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: local("Gilroy-Regular"),
+    url("./fonts/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins-Regular"),
+    url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MaryPoppins";
+  src: local("Poppins-ExtraLight"),
+    url("./fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: local("Gilroy-ExtraBold"),
+    url("./fonts/Gilroy-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "UltraLight";
+  src: local("Gilroy-UltraLight"),
+    url("./fonts/Gilroy-UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Light";
+  src: local("Gilroy-Light"),
+    url("./fonts/Gilroy-Light.ttf") format("truetype");
+}

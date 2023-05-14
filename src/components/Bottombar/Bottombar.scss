@@ -1,0 +1,144 @@
+@mixin hover-active {
+  &:hover {
+    .no-touch & {
+      @content;
+    }
+  }
+  &:active {
+    .touch & {
+      @content;
+    }
+  }
+}
+
+@mixin botText {
+  color: white;
+  width: 328px;
+  // margin-left: 70px;
+  line-height: 128.5%;
+  letter-spacing: -0.02em;
+  @include hover-active {
+    cursor: pointer;
+  }
+
+  @media (max-width: 1050px) {
+    width: 250px;
+  }
+}
+
+.Bottombar {
+  height: 393px;
+  margin-top: 2260px;
+  width: 98.9vw;
+  background-color: black;
+
+  @media (max-width: 1050px) {
+    margin-top: 2886px;
+  }
+
+  @media (max-width: 800px) {
+    height: 800px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 3000px;
+  }
+
+  .columnContainer {
+    display: flex;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .botColumn {
+    margin-left: 70px;
+
+    @media (max-width: 1050px) {
+      margin-left: 30px;
+    }
+  }
+
+  .botColumn2 {
+    margin-left: 4.7vw;
+
+    @media (max-width: 1150px) {
+      margin-left: 20px;
+    }
+
+    @media (max-width: 1050px) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 800px) {
+      margin-left: 30px;
+    }
+  }
+
+  .botColumn3 {
+    margin-left: 11.1vw;
+
+    @media (max-width: 1150px) {
+      margin-left: 20px;
+    }
+
+    @media (max-width: 1050px) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 800px) {
+      margin-left: 30px;
+    }
+  }
+
+  .botTitle {
+    @include botText;
+    height: 36px;
+    font-family: "SemiBold";
+    font-size: 25px;
+    margin-top: 76px;
+  }
+
+  .botText {
+    @include botText;
+    font-family: "Regular";
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .iconContainer {
+    // margin-left: 60px;
+    margin-top: 20px;
+    .botIcon {
+      height: 38px;
+      width: 38px;
+      margin-right: 10px;
+    }
+  }
+
+  .cpyRightText {
+    width: 1122px;
+    height: 26px;
+    margin-left: 70px;
+    margin-top: 70px;
+
+    font-family: "UltraLight";
+    font-style: normal;
+    font-size: 20px;
+    line-height: 128.5%;
+    letter-spacing: -0.02em;
+    color: #b7b7b7;
+
+    @media (max-width: 1050px) {
+      margin-left: 30px;
+    }
+
+    @media (max-width: 650px) {
+      margin-top: 50px;
+      width: 70vw;
+    }
+  }
+
+  
+}

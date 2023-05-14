@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.Home {
+    height: 3181px;
+    max-width: 100vw;
+
+    @media (max-width: 1050px) {
+        height: 4067px;
+    }
+
+    @media (max-width: 600px) {
+        height: 4140px;
+      }
+}
